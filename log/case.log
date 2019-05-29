@@ -1,1 +1,90 @@
 case - INFO - 2019-05-23 09:22:35,8
+test_login - INFO - 2019-05-29 14:24:48,501 - 准备测试前置 - [test_login.py:17]
+test_login - INFO - 2019-05-29 14:24:48,502 - 开始测试：正常密码登录 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,626 - 测试结束：正常密码登录 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:48,627 - 开始测试：不输入手机号 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,697 - 测试结束：不输入手机号 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:48,697 - 开始测试：不输入密码 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,745 - 开始测试：登录未注册的手机号 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,818 - 测试结束：登录未注册的手机号 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:48,818 - 开始测试：输入错误的密码 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,880 - 测试结束：输入错误的密码 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:48,880 - 开始测试：账号密码全部不输入 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,927 - 测试结束：账号密码全部不输入 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:48,928 - 开始测试：输入12位手机号 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:48,979 - 测试结束：输入12位手机号 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:48,979 - 开始测试：输入10位手机号 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:49,030 - 测试结束：输入10位手机号 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:49,030 - 开始测试：账号框输入特殊字符 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:49,076 - 测试结束：账号框输入特殊字符 - [test_login.py:62]
+test_login - INFO - 2019-05-29 14:24:49,077 - 开始测试：退出登录 - [test_login.py:26]
+test_login - INFO - 2019-05-29 14:24:49,139 - 测试结束：退出登录 - [test_login.py:62]
+test_register - INFO - 2019-05-29 14:24:49,140 - 准备测试前置 - [test_register.py:17]
+test_register - INFO - 2019-05-29 14:24:49,151 - 开始测试：正常注册 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,235 - 报错了：'{"status":1,"statusMsg":"注册成功"}' != '{"status":-1,"statusMsg":"用户已注册"}'
+- {"status":1,"statusMsg":"注册成功"}
+?                            --
++ {"status":-1,"statusMsg":"用户已注册"}
+?           +               +++
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,242 - 开始测试：注册过的号码注册 - [test_register.py:26]
+test_register - INFO - 2019-05-29 14:24:49,308 - 测试结束：注册过的号码注册 - [test_register.py:44]
+test_register - INFO - 2019-05-29 14:24:49,308 - 开始测试：不传手机号码注册 - [test_register.py:26]
+test_register - INFO - 2019-05-29 14:24:49,365 - 测试结束：不传手机号码注册 - [test_register.py:44]
+test_register - INFO - 2019-05-29 14:24:49,365 - 开始测试：不输入密码注册 - [test_register.py:26]
+test_register - INFO - 2019-05-29 14:24:49,412 - 测试结束：不输入密码注册 - [test_register.py:44]
+test_register - INFO - 2019-05-29 14:24:49,413 - 开始测试：输入5位密码 - [test_register.py:26]
+test_register - INFO - 2019-05-29 14:24:49,486 - 测试结束：输入5位密码 - [test_register.py:44]
+test_register - INFO - 2019-05-29 14:24:49,486 - 开始测试：不输入验证码注册 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,541 - 报错了：'{"status":-1,"statusMsg":"验证码错误"}' != '{"status":-1,"statusMsg":"用户已注册"}'
+- {"status":-1,"statusMsg":"验证码错误"}
+?                           ^^^^^
++ {"status":-1,"statusMsg":"用户已注册"}
+?                           ^^^^^
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,541 - 开始测试：只输入手机号 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,601 - 报错了：'{"status":-1,"statusMsg":"验证码错误"}' != '{"status":-1,"statusMsg":"密码最少6位"}'
+- {"status":-1,"statusMsg":"验证码错误"}
+?                           ^^ ^^
++ {"status":-1,"statusMsg":"密码最少6位"}
+?                           ^ ^^^^
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,602 - 开始测试：只输入密码 - [test_register.py:26]
+test_register - INFO - 2019-05-29 14:24:49,661 - 测试结束：只输入密码 - [test_register.py:44]
+test_register - INFO - 2019-05-29 14:24:49,662 - 开始测试：只输入验证码 - [test_register.py:26]
+test_register - INFO - 2019-05-29 14:24:49,725 - 测试结束：只输入验证码 - [test_register.py:44]
+test_register - INFO - 2019-05-29 14:24:49,725 - 开始测试：全部不输入 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,789 - 报错了：'{"status":-1,"statusMsg":"验证码错误"}' != '{"status":-1,"statusMsg":"手机号格式不正确"}'
+- {"status":-1,"statusMsg":"验证码错误"}
+?                           ^^^^^
++ {"status":-1,"statusMsg":"手机号格式不正确"}
+?                           ^^^^^^^^
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,789 - 开始测试：输入错误的验证码 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,842 - 报错了：'{"status":-1,"statusMsg":"验证码错误"}' != '{"status":-1,"statusMsg":"密码最少6位"}'
+- {"status":-1,"statusMsg":"验证码错误"}
+?                           ^^ ^^
++ {"status":-1,"statusMsg":"密码最少6位"}
+?                           ^ ^^^^
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,843 - 开始测试：密码超出20位不能注册 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,898 - 报错了：'{"status":-1,"statusMsg":"密码不能超出20位"}' != '{"status":-1,"statusMsg":"用户已注册"}'
+- {"status":-1,"statusMsg":"密码不能超出20位"}
+?                           ^^^^^^^^^
++ {"status":-1,"statusMsg":"用户已注册"}
+?                           ^^^^^
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,899 - 开始测试：密码20位注册成功 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:49,951 - 报错了：'{"status":1,"statusMsg":"注册成功"}' != '{"status":-1,"statusMsg":"用户已注册"}'
+- {"status":1,"statusMsg":"注册成功"}
+?                            --
++ {"status":-1,"statusMsg":"用户已注册"}
+?           +               +++
+ - [test_register.py:42]
+test_register - INFO - 2019-05-29 14:24:49,952 - 开始测试：密码包含特殊字符注册 - [test_register.py:26]
+test_register - ERROR - 2019-05-29 14:24:50,042 - 报错了：'{"status":1,"statusMsg":"注册成功"}' != '{"status":-1,"statusMsg":"用户已注册"}'
+- {"status":1,"statusMsg":"注册成功"}
+?                            --
++ {"status":-1,"statusMsg":"用户已注册"}
+?           +               +++
+ - [test_register.py:42]
